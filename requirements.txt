@@ -1,0 +1,4 @@
+Flask==2.0.1
+nltk==3.6.3
+numpy==1.19.5
+tensorflow==2.6.0
