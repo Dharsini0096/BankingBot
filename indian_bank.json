@@ -1,0 +1,153 @@
+{
+	"intents":
+	[
+		{"tag" : "greetings" ,
+		 "pattern" : ["Hi" , "Hello!" , "How are u?","How do u do?"],
+		 "responses" : ["Hello, Bot here ! How r u ? ", "Hi" , "Hello" , "I am fine" , "Fine here , How about u ?"],
+		 "context_set" : ""
+		},
+
+		{"tag" : "goodbye" ,
+		 "pattern" : ["Bye","GoodBye" , "See you later"],
+		 "responses" : ["Bye Buddy" , "Meet u again" , "Bye" ,"Thanks for visiting !"]
+		},
+
+		{"tag" : "thanks" ,
+		 "pattern" : ["Thank you","Thanks" , "That's helpful"],
+		 "responses" : ["My pleasure ! " , "Happy to help anytime"]
+		},
+
+		{"tag" : "hours",
+		 "pattern" : ["What is the working hours of the bank ?" , "bank working time ?" , "when is bank open"],
+		 "responses" : ["All days except Saturday & Sunday from morning 10 a.m to evening 5 p.m"]
+		},
+
+		{"tag" : "locality" ,
+		 "pattern" : ["Address of the bank ? " , "Correct Location of the bank" , "Bank Address"],
+		 "responses" : ["248/125C,Vidhya Nagar , Opposite to Nalam Hospital , Gugai , Salem -636 012"]
+		},
+
+		{"tag" : "contact" ,
+		 "pattern" : ["Bank Contact details" , "Contact no" , "Helpline  Contact No"],
+		 "responses" : ["Mr . Ravi , Bank Employee \n Call : 0427 - 2213456"]
+		},
+
+		{"tag" : "account" ,
+		 "pattern" : ["What is the bank procedure to open account ?" , "Account opening procedures ?" , "How to hold account in the bank" , "What are the documents required to open the account"],
+		 "responses" : ["1. Decide the type of Bank Account \n 2. Meet the bank officer or reach our website \n 3. Fill up the opening form - Proposal Form \n 4. Specify the referneces if any \n 5. Submit the opening form and documents \n 6. Officer will verify the form and documents \n 7. Deposit initial amount in the new account opened"]
+		},
+
+		{"tag" : "types" ,
+		 "pattern" : ["What are the different types of account?" , "Types of account that can be chosen"],
+		 "responses" : ["1.Current Account 2.Savings Account 3.Salary Account 4.Fixed Deposit Account 5.Recurring Deposit Account 6.NRI Account 7.Foreign Currency non-resident Account(FCNR)"]
+		},
+
+		{"tag" : "current_account" ,
+		 "pattern" : ["What is current Account?"],
+		 "responses" : ["A type of deposit account maintained by individuals who carry out significantly higher number of transactions with banks on a regular basis."]
+		},
+
+		{"tag" : "savings_account" ,
+		 "pattern" : ["What is savings Account?" , "How about savings account?"],
+		 "responses" : ["A savings account is a basic type of bank account that allows you to deposit money, keep it safe, and withdraw funds, all while earning interest."]
+		},
+
+		{"tag" : "salary_account" ,
+		 "pattern" : ["What is salary Account?" , "How about salary account?"],
+		 "responses" : ["A salary account is basically opened by for employers to credit their salary. The speciality of this account is that there is no need to maintain minimum balance account hence it can also be called as zero balance account."]
+		},
+
+		{"tag" : "fixed_deposit" ,
+		 "pattern" : ["What is fixed Deposit Account?" , "How about FD account?"],
+		 "responses" : ["Fixed deposits are financial provisions that are offered by banks and NBFCs where you can deposit a lump sum of money to yield a higher rate of interest as compared to your savings account. The deposit can be made for a specific period ranging from 7 days to 10 years."]
+		},
+
+		{"tag" : "recurring_deposit" ,
+		 "pattern" : ["What is recurring Deposit Account?" , "How about recurring deposit account?"],
+		 "responses" : ["Recurring Deposit (RDs) are one which allows you to invest a small amount of money and earn interest on it. The investments must be made at regular intervals."]
+		},
+
+		{"tag" : "nri" ,
+		 "pattern" : ["What is NRI Account?" , "How about NRI account?"],
+		 "responses" : ["An NRI Account refers to the accounts opened by a Non-Resident Indian (NRI) or a Person of Indian Origin (PIO) with a bank or financial institution which is authorised by the Reserve Bank of India (RBI), to provide various services."]
+		},
+
+		{"tag" : "FCNR" ,
+		 "pattern" : ["What is FCNR Account?" , "How about FCNR account?"],
+		 "responses" : ["This is a kind of fixed deposit account opened for depositing income earned overseas. The account is held in foreign currency."]
+		},
+
+		{"tag" : "insurance" ,
+		 "pattern" : ["How abt insurance policy?" , "Which adminstaration or Corporation provide insurance and how much?"],
+		 "responses" : ["Either Federal Deposit Insurance (FDI) or National Credit Union Adminstrator of upto 2L per depositor"]
+		},
+
+		{"tag" : "balance" ,
+		 "pattern" : ["How abt minimum balance"],
+		 "responses" : ["Minimum Balance : 5000/-"]
+		},
+
+		{"tag" : "feecharge" ,
+		 "pattern" : ["What is the monthly fee charges for account ?"],
+		 "responses" : ["Account fee charges : 200/-"]
+		},
+
+		{"tag" : "fees" ,
+		 "pattern" : ["What are fees incurred on the account?"],
+		 "responses" : ["1. Monthly Service/Maintanence fee \n 2.Overdraft fee \n 3.Non-sufficient fee (NSF) \n 4.ATM fee"]
+		},
+
+		{"tag" : "atm" ,
+		 "pattern" : ["How abt ATM facilities" , "Where are the ATM's located"],
+		 "responses" : ["ATM facilities available 24/7 in all major cities and areas"]
+		},
+
+		{"tag" : "loan" ,
+		 "pattern" : ["What are the loan schemes ? " , "How about the loan schemes"],
+		 "responses" : ["1. Personal Loan \n 2. Business Loan \n 3.Student Educational Loan"]
+		},
+
+		{"tag" : "loan_eligibility" ,
+		 "pattern" : ["Who is eligible for loan ?" , "Is there any criteria for applying loan?" ],
+		 "responses" : ["Customers with account in our bank & with all valid documents will be forwared to claim loan"]
+		},
+
+		{"tag" : "loanamt" ,
+		 "pattern" : ["What is the approximate amount offered for loan ?", "Initial amount for loan?" , "rate of interest offered"],
+		 "responses" : ["Based on your bank balance amd other criteria's of documents it depends"]
+		},
+
+		{"tag" : "app" ,
+		 "pattern" : ["how about mobile apps ? " , "Is there any mobile apps ?"],
+		 "responses" : ["yes , we have our own bank app , portable and suitable for both IOS and Android devices. U can download it from play store 'Indian Bank App' "]
+		},
+
+		{"tag" : "webapp" ,
+		 "pattern" : ["Name of your websites ?"],
+		 "responses" : ["https://www.indianbank.net.in"]
+		},
+
+		{"tag" : "netbanking" ,
+		 "pattern" : ["Do support netbanking"],
+		 "responses" : ["yes , we support netbanking - you can use our website for netbanking by logging in using your account details"]
+		},
+
+		{
+		"tag"		: "inactive",
+		"pattern"	:["what is inactive?","if we won't use our saving or current accout for a year what will happen?" ],
+		"responses"	:["If you haven't used your savings or current account for any transaction for over 1 year, the account becomes inactive. if the account has been inactive for 2 years, it becomes doemant or inoperative"]
+		},
+
+		{
+		"tag"		:"apply_loan",
+		"pattern"	:["which douments are required for personal loans?"],
+		"responses"	:["1. Proof of identity-passport/driving license/voters id/pan card\n 2. proof of residence-leave and license agreement/utility bill/passport \n 3. salary slips for last 3 months \n 5 . passport size photograps \n 6. latest 3 months bank statement(where salary/income is credited "]
+		},
+
+		{
+		"tag"		:"age_limit",
+		"pattern"	:["what is the age limit for opening the bank account?","shall we open bank account for children,then what is the age limit?"],
+		"responses" :["Banks have categorised savings bank account for children in two categories;one for those below the age of 10 and another for those in 10-18 age group"]
+		}
+	]
+}
