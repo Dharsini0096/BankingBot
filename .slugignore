@@ -1,1 +1,4 @@
-
+*.psd
+*.pdf
+/test
+/spec
