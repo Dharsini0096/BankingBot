@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 
-from bot2 import chatwithbot, getbankname
+from model.bot2 import chatwithbot, getbankname
 
 app = Flask(__name__)
 
