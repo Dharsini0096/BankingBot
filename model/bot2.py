@@ -23,13 +23,13 @@ myChatModel = []
 def getbankname(name):
     bank = name
     global data
-    with open("model/" + bank + ".json") as file:
+    with open("model/indian_bank.json") as file:
         data = json.load(file)
 
     global words, labels, doc_x, doc_y
 
     try:
-        with open("model/" + bank + "data.pickle", "rb") as f:
+        with open("model/indian_bankdata.pickle", "rb") as f:
             words, labels, training, output = pickle.load(f)
 
     except Exception:
@@ -71,16 +71,16 @@ def getbankname(name):
         training = numpy.array(training)
         output = numpy.array(output)
 
-        with open("model/" + bank + "data.pickle", "wb") as f:
+        with open("model/indian_bankdata.pickle", "wb") as f:
             pickle.dump((words, labels, training, output), f)
 
     try:
         global myChatModel
-        json_file = open("model/" + bank + 'chatbotmodel.json', 'r')
+        json_file = open("model/indian_bankchatbotmodel.json", 'r')
         loaded_model_json = json_file.read()
         json_file.close()
         myChatModel = model_from_json(loaded_model_json)
-        myChatModel.load_weights("model/" + bank + "chatbotmodel.h5")
+        myChatModel.load_weights("model/indian_bankchatbotmodel.h5")
         print("Loaded model from disk")
     except Exception:
         myChatModel = Sequential()
@@ -92,10 +92,10 @@ def getbankname(name):
         myChatModel.fit(training, output, epochs=1000, batch_size=8)
 
         model_json = myChatModel.to_json()
-        with open("model/" + bank + "chatbotmodel.json", "w") as y_file:
+        with open("model/indian_bankchatbotmodel.json", "w") as y_file:
             y_file.write(model_json)
 
-        myChatModel.save_weights("model/" + bank + "chatbotmodel.h5")
+        myChatModel.save_weights("model/indian_bankchatbotmodel.h5")
         print("Saved model from disk")
 
 
